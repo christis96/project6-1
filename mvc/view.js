@@ -1,4 +1,6 @@
-function updateVeiw(){
+
+function updateView() {
+
     app.innerHTML = /*HTML*/ `
     
     `;
