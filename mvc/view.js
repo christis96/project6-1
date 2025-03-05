@@ -1,1 +1,5 @@
-function updateview ()
+function updateView() {
+    app.innerHTML = /*HTML*/ `
+    
+    `;
+};
