@@ -1,24 +1,26 @@
 const app = document.getElementById('app');
-
+let quest = 0;
 let respect = 25;
-let friends = ['Trevor',
-    'Michael',
-    'Franklin'
-];
-let obstacles = ['Yelling Karen',
-    'Military Chopper',
-    'Bank robbery'
-];
-let carInventory = ['Bag of cash',
-    'Rocket launcher',
-    'AK-47',
-    'Bullet proof glass'
+let situations = [
+    {
+        greeting: "Du møter på Trevor,   Hva svarer du? <p> A:Hei, B:Fuck off, C:Ikke si noe</p>",
+        correctGreeting: "A",
+    },
+    {
+        greeting: "Du møter på Michael, Hva svarer du? <p>A:Yo, B:Fuck off, C:Ikke si noe</p>",
+        correctGreeting: "A",
+    },
+    {
+        greeting: "Du møter på Franklin, Hva svarer du? <p>A:Wassup, B:Fuck you, C: Ikke si noe</p>",
+        correctGreeting: "A",
+    },
+]
 
-];
+let michaelSituation = [
+    {
+        greeting: "Du drar til Michael's oppkjørsel, der står yelling Karen. Hva gjør du? <p> A:Snakke fornuftig med henne, B:Ringe politiet, C:Klappe til Karen! </p> ",
+        correctGreeting: "C",
+    }
 
-let situation = ['Du møter på Trevor, Hva svarer du?: Hei, Fuck off, ikke si noe',
-    'Du møter på Michael: Hei, Fuck off, ikke si noe',
-    'Du møter på Franklin: Hei, Fuck off, ikke si noe'
-
-];
-randomSituationIndex = Math.floor(Math.random() * situation.length);
+]
+randomSituationIndex = Math.floor(Math.random() * situations.length);
