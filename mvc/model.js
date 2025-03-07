@@ -14,6 +14,7 @@ let situations = [
         greeting: "Du møter på Franklin, Hva svarer du? <p>A:Wassup, B:Fuck you, C: Ikke si noe</p>",
         correctGreeting: "A",
     },
+    
 ]
 
 let michaelSituation = [
