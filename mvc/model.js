@@ -1,5 +1,7 @@
 const app = document.getElementById('app');
-let quest = 0;
+let quest = "";
+let questanswer;
+let hasAnswered = false;
 let respect = 25;
 let situations = [
     {
